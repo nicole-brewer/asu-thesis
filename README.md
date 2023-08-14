@@ -1,40 +1,23 @@
+# Asu-thesis Format
 
-# ASU Thesis and Dissertation Template
+## Installing
 
-## About this template
-
-This template follows the guidelines set out by the [ASU Graduate College Format Manual](https://graduate.asu.edu/sites/default/files/2022-02/asu-graduate-college-format-manual.pdf). More information about [formatting your thesis](https://graduate.asu.edu/current-students/completing-your-degree/formatting-your-thesis-or-dissertation) can be found at the Graduate College website.
-
-## Creating a New Thesis/Dissertation
-
-To create a new article using this format:
 
 ```bash
-quarto use template nicole-brewer/asu-thesis
+quarto use template nicole-brewer/quarto-dissertation
 ```
 
-This will create a new directory with an example document that uses this format.
+This will install the extension and create an example qmd file that you can use as a starting place for your article.
 
-## Using with an Existing Document
+## Using
 
-To add this format to an existing document:
+*TODO*: Describe how to use your format.
 
-```bash
-quarto add nicole-brewer/asu-thesis
-```
-
-Then, add the format to your document options:
-
-```yaml
-format:
-  asu-thesis-pdf: default
-```    
-
-## Options
+## Format Options
 
 *TODO*: If your format has options that can be set via document metadata, describe them.
 
 ## Example
 
-Here is the source code for a minimal sample document: [template.qmd](template.qmd).
+Here is the source code for a minimal sample document: [example.qmd](example.qmd).
 

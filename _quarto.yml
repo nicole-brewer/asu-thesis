@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "Asu-thesis"
+  author: "Norah Jones"
+  date: "8/13/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  pdf:
+    include-in-header: tex/header.tex
+    format-resources:
+      - tex/asudis.bst
+      - tex/asudis.sty
+    template-partials:
+      - tex/doc-class.tex
+      - tex/title.tex
+
+
+
