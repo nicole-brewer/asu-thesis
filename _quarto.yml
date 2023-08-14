@@ -2,19 +2,21 @@ project:
   type: book
 
 book:
-  title: "Asu-thesis"
-  author: "Norah Jones"
+  title: "ASU Dissertation"
+  author: "Nicole Brewer"
   date: "8/13/2023"
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
-    - references.qmd
 
 bibliography: references.bib
 
 format:
+  html:
+    theme: cosmo
   pdf:
+    toc: false 
     include-in-header: tex/header.tex
     format-resources:
       - tex/asudis.bst
@@ -22,6 +24,7 @@ format:
     template-partials:
       - tex/doc-class.tex
       - tex/title.tex
-
-
-
+      - tex/before-body.tex
+      - tex/toc.tex
+      - tex/biblio.tex
+      - tex/after-body.tex
