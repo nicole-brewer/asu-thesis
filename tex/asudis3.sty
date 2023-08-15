@@ -54,7 +54,43 @@ letterpaper}%,showframe,showcrop}
 \newcommand{\degreeName}[1]{\renewcommand{\@degreeName}{#1}}
 \newcommand{\@degreeName}{\tt$\backslash$\string degreeName}
 %
-
+% Redefine maketitle
+\newlength{\fiveblanklines}\setlength{\fiveblanklines}{0.7 in}
+\newlength{\tenblanklines}\setlength{\tenblanklines}{1.5 in}
+\renewcommand\maketitle{
+\enlargethispage{0.5in} %make extra room where page number would go
+\thispagestyle{empty}
+\noindent
+  \begin{minipage}[t][647.0truept][t]{\linewidth}
+  \begin{center}
+  \@title\\ \ \\
+by\\ \ \\
+\@author
+\end{center}
+\vspace{\fiveblanklines}
+\begin{center}
+\singlespace
+A Dissertation Presented in Partial Fulfillment\\
+of the Requirements for the Degree\\
+\@degreeName
+\end{center}
+\vspace{\tenblanklines}
+\begin{center}
+\singlespace
+Approved \@defensemonth\ by the\\
+Graduate Supervisory Committee:\\
+\ \\
+\@chair\\
+\end{center}
+\vfill
+\begin{center}
+\doublespace
+ARIZONA STATE UNIVERSITY\\
+\@gradmonth\ 
+\end{center} 
+\end{minipage}
+\clearpage
+}
 		
 %
 % redefine abstract environment

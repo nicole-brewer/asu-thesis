@@ -1,8 +1,42 @@
-\title{My Title \\ \ \\ My Subtitle \\ \ \\ My Subsubtitle}
-\author{FirstName LastName}
-\degreeName{Doctor of Philosophy}
-\defensemonth{April}
-\gradmonth{May}
-\gradyear{2026}
-\chair{First Last, Co-Chair \\ Lirst Fast, Co-Chair \\ Committee Member}		
-%\maketitle
+% Redefine maketitle
+
+\newlength{\fiveblanklines}\setlength{\fiveblanklines}{0.7 in}
+\newlength{\tenblanklines}\setlength{\tenblanklines}{1.5 in}
+\renewcommand\maketitle{
+\enlargethispage{0.5in} %make extra room where page number would go
+\thispagestyle{empty}
+\noindent
+  \begin{minipage}[t][647.0truept][t]{\linewidth}
+  \begin{center}
+  $title$\\ \ \\
+by\\ \ \\
+$author$
+\end{center}
+\end{minipage}
+\vspace{\fiveblanklines}
+\begin{center}
+\singlespace
+A Dissertation Presented in Partial Fulfillment\\
+of the Requirements for the Degree\\
+Degree Name
+\end{center}
+\vspace{\tenblanklines}
+\begin{center}
+\singlespace
+Approved $date$ by the\\
+Graduate Supervisory Committee:\\ \ \\
+$author$\\
+\end{center}
+}
+
+\iffalse
+
+\vfill
+\begin{center}
+\doublespace
+ARIZONA STATE UNIVERSITY\\
+$event-date$
+\end{center} 
+\clearpage
+
+\fi
