@@ -1,0 +1,35 @@
+project:
+  type: book
+
+book:
+  title: "Quarto-thesis"
+  author: "Nicole Brewer"
+  date: "8/15/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  asu-quarto-thesis-pdf:
+    keep-tex: true
+    author: Nicole Brewer
+    date: last-modified
+    degree-type: Doctor of Philosophy
+    degree-name: History and Philosophy of Science
+    defense-date: April 15, 2026
+    graduation-date: May 15, 2026
+    chair:
+      - Manfred Laubichler
+      - Jane Maienschein
+    abstract: |
+        Some abstract text about a very exciting (and reproducible) dissertation!
+    dedication: | 
+        This dissertation is dedicated to my faithful ergonomic mouse that kept me from getting carpal tunnel, xxx
+    acknowledgements: |
+        I'd like to thank all the wonderful people who supported me through this difficult journey.
+
+

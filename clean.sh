@@ -1,3 +1,3 @@
 #!/bin/bash
 rm -f asudis.*
-rm -f *.aux 
+rm -f *.aux *.lof *.lot *.log *.toc *.tex

@@ -6,15 +6,7 @@ contributes:
   formats:
     pdf:
       toc: false
-      include-in-header: header.tex
       template: asudis/dis.tex
       format-resources:
         - asudis/asudis.bst
         - asudis/asudis.sty
-      # template-partials:
-      #  - tex/doc-class.tex
-      #  - tex/title.tex
-      #  - tex/before-body.tex
-      #  - tex/toc.tex
-      #  - tex/biblio.tex
-      #  - tex/after-body.tex
