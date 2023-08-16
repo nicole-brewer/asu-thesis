@@ -1,10 +1,11 @@
-# Asu-thesis Format
+# Asu-quarto-thesis Format
 
 ## Installing
 
+*TODO*: Replace the `<github-organization>` with your GitHub organization.
 
 ```bash
-quarto use template nicole-brewer/quarto-dissertation
+quarto use template <github-organization>/asu-quarto-thesis
 ```
 
 This will install the extension and create an example qmd file that you can use as a starting place for your article.

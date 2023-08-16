@@ -1,5 +1,10 @@
+%\title{$title$ \\ \ \\ ${if(subtitle)}${subtitle}${endif} \\ \ \\ Subtitle}
+%\author{$author$}
+%\degreeName{Doctor of Philosophy}
+%\defensemonth{$date$}
+%\gradmonth{$event-date$}
+%\chair{First Last, Co-Chair \\ Lirst Fast, Co-Chair \\ Committee Member}		
 % Redefine maketitle
-
 \newlength{\fiveblanklines}\setlength{\fiveblanklines}{0.7 in}
 \newlength{\tenblanklines}\setlength{\tenblanklines}{1.5 in}
 \renewcommand\maketitle{
@@ -12,31 +17,30 @@
 by\\ \ \\
 $author$
 \end{center}
-\end{minipage}
 \vspace{\fiveblanklines}
 \begin{center}
 \singlespace
 A Dissertation Presented in Partial Fulfillment\\
 of the Requirements for the Degree\\
-Degree Name
+$degree-name$
 \end{center}
+\iffalse
 \vspace{\tenblanklines}
 \begin{center}
 \singlespace
-Approved $date$ by the\\
-Graduate Supervisory Committee:\\ \ \\
-$author$\\
+Approved \@defensemonth\ by the\\
+Graduate Supervisory Committee:\\
+\ \\
+\@chair\\
 \end{center}
-}
-
-\iffalse
-
 \vfill
 \begin{center}
 \doublespace
 ARIZONA STATE UNIVERSITY\\
-$event-date$
+\@gradmonth\ 
 \end{center} 
+\end{minipage}
 \clearpage
-
 \fi
+}
+	
