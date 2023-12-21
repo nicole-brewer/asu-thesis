@@ -11,25 +11,33 @@ book:
     - summary.qmd
     - references.qmd
 
-bibliography: references.bib
+#bibliography: references.bib
 
 format:
-  asu-quarto-thesis-pdf:
+  asu-thesis-pdf:
     keep-tex: true
+    title: Untitled
+    subtitle: Subtitle
+    format:
+      asu-quarto-thesis-pdf: default
     author: Nicole Brewer
     date: last-modified
-    degree-type: Doctor of Philosophy
-    degree-name: History and Philosophy of Science
-    defense-date: April 15, 2026
-    graduation-date: May 15, 2026
-    chair:
+    document-type: "Dissertation" # "Thesis"
+    degree-type: "Doctor of Philosophy" 
+    approval-date: April 2026
+    graduation-date: May 2026
+    # chair: Manfred Laubichler
+    co-chairs:
       - Manfred Laubichler
       - Jane Maienschein
+    committee:
+      - Beckett Sterner
+      - Michael Barton
     abstract: |
-        Some abstract text about a very exciting (and reproducible) dissertation!
+        Some abstract text about a very exciting (and reproducible) dissertation! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     dedication: | 
-        This dissertation is dedicated to my faithful ergonomic mouse that kept me from getting carpal tunnel, xxx
+        This dissertation is dedicated to my faithful ergonomic mouse that kept me from getting carpal tunnel and all the people in the open source communities that contributed to Quarto, the Jupyter Project and others, xxx
     acknowledgements: |
-        I'd like to thank all the wonderful people who supported me through this difficult journey.
+        I'd like to thank all the wonderful people who supported me through this difficult journey. I would like to express my gratitude to my advisor for the opportunity to work on my research project and for their guidance and support throughout my doctoral journey. I would also like to sincerely thank my committee members for helping me develop my research and for providing valuable guidance and encouragement throughout my studies.
 
 
